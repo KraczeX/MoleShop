@@ -15,7 +15,7 @@
 }
 
 .btn{
-  background: #7843e9;
+  background: #0226bb;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -29,14 +29,14 @@
 }
 
 .btn:hover {
-  background: #6329e1;
+  background: #0226bb;
   transform: translateY(-3px);
 }
 
 .divider{
   height: 5px;
   width: 3rem;
-  background: #7843e9;
+  background: #0226bb;
   border-radius: 5px;
   margin: 15px auto;
 
