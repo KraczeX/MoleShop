@@ -9,13 +9,22 @@ import Discord from '../assets/socials/discord.svg';
 
 import { TypeAnimation } from 'react-type-animation';
 
+import { motion } from "framer-motion";
+// variants
+import { fadeIn } from "../variants";
+
 
 
 const Home = () => {
   return (
     <div className="hero my-8 md:py-8 px-7 relative" id="home">
     <div className='hero h-screen flex items-center justify-center'>
-      <div className='text-center md:w-1/2'>
+    <motion.div 
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center md:w-1/2">
       <h1 className="text-primary text-5xl font-extrabold tracking-wider mb-8">
             CodingMole Project
           </h1>
@@ -36,8 +45,10 @@ const Home = () => {
       className='font-semibold text-transparent leading-10 bg-clip-text bg-gradient-to-r from-blue-600 to-pink-400'
     />
         <p className="text-light text-xl my-8">Transform your web presence with CodingMole's frontend expertise. Stunning UI, seamless interactions, unrivaled experiences. Elevate your site today!</p>
-        <button className='btn py-4 px-16'>Projects</button>
-      </div>
+       
+        </motion.div>
+
+      
 
       <div className='bg-white w-20 rounded py-1 px-2 absolute left-0 top-48 hidden md:block'>
       <div className='my-1'>

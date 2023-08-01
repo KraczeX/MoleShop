@@ -9,8 +9,8 @@ import profileImg from '../assets/logo.png'
 
 const Header = () => {
   let Links = [
-    { name: "Home", link: "Home" },
-    { name: "About Us", link: "about us" },
+    { name: "Home", link: "home" },
+    { name: "About me", link: "about" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
   ];
@@ -36,7 +36,7 @@ const Header = () => {
         >
           {Links.map((link) => (
             <li className="md:ml-8 md:my-0 mt-5 font-semibold text-xl border-b-2 md:border-b-0 text-right px-7 md:px-4 pb-4 md:pb-0 cursor-pointer" key={link.name}>
-              <Link
+             <Link
                 to={link.link}
                 activeClass="active"
                 smooth={true}

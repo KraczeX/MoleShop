@@ -2,9 +2,13 @@
 import React from 'react';
 import Headline from '../shared/Headline';
 
+import { motion } from "framer-motion";
+// variants
+import { fadeIn } from "../variants";
+
 const Contact = () => {
     return (
-        <div className=' contact mx-auto mt-8 px-7'>
+        <div className=' contact mx-auto mt-8 px-7' id='contact'>
             <Headline title={'CONTACT'} subtitle={'You can contact us by filling out the form below. Feel free to write if you have any questions!'}/>
 
             <div className="md:w-2/3 mx-auto bg-white md:px-16 px-8 py-8 rounded mb-32">
