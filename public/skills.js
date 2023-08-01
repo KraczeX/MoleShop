@@ -8,7 +8,7 @@ const skills = [
     {id: 7, title: 'Github'},
     {id: 8, title: 'TypeScript'},
     {id: 9, title: 'Express'},
-    {id: 11, title: 'Respondive Design'},
+    {id: 11, title: 'Responsive Design'},
     {id: 12, title: 'PhotoShop'},
     {id: 13, title: 'Tailwind CSS'},
     {id: 14, title: 'Bootstrap'},

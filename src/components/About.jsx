@@ -15,10 +15,10 @@ const About = () => {
 
             <div className='flex flex-col md:flex-row items-start justify-start'> 
                 <motion.div className='md:w-1/2 my-8'
-                variants={fadeIn("right", 0.3)}
+                variants={fadeIn("right", 0.2)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.7 }}>
+                viewport={{ once: false, amount: 0.4 }}>
                     <h4 className='text-2xl font-bold mb-8'>Get to know us!</h4>
                     <div className='md:w-10/12 text-lg text-[#666] mb-8'>
                     <p className='mb-5'>We are a project specializing in creating Discord servers, websites, and Discord bots. Our project is called <strong>Coding Mole Project</strong>.</p>
@@ -33,7 +33,7 @@ const About = () => {
                     variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }}>
+                    viewport={{ once: false, amount: 0.5 }}>
                         {
                             skills.map(skill => <p key={skill.id} className='bg-slate-300 text-light py-2 px-4 rounded'>{skill.title}</p>)
                         }
