@@ -10,7 +10,7 @@ import profileImg from '../assets/logo.png'
 const Header = () => {
   let Links = [
     { name: "Home", link: "home" },
-    { name: "About me", link: "about" },
+    { name: "About us", link: "about" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
   ];

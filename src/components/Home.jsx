@@ -50,7 +50,7 @@ const Home = () => {
 
       
 
-      <div className='bg-white w-20 rounded py-1 px-2 absolute left-0 top-48 hidden md:block'>
+      <div className="bg-white w-20 rounded py-1 px-2 absolute left-0 top-48 hidden md:block">
       <div className='my-1'>
         <a href="" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
           <img src={GitHub} alt="" className='w-10 h-10'/>
