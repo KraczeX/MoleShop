@@ -1,4 +1,8 @@
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+
+import {
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import profileImg from '../assets/logo.png'
@@ -22,16 +26,17 @@ const Header = () => {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className={`absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 text-primary ${open ? 'animate-hamburger' : ''}`}
+          className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 text-primary"
         >
           {open ? <XMarkIcon /> : <Bars3Icon />}
         </div>
         <ul
-          className={`md:flex md:items-center items-center md:pb-0 absolute md:static md:z-auto z-50 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0 bg-white sm:bg-transparent ${open ? "top-12" : "top-[-490px]"} ${open ? "opacity-1" : "opacity-0"} transition-opacity duration-300`}
+          className={`md:flex md:items-center items-center md:pb-0 absolute md:static  md:z-auto z-50 left-0 w-full md:w-auto mt-4 md:mt-0 md:pl-0  bg-white sm:bg-transparent  ${open ? "top-12" : "top-[-490px]"
+            }`}
         >
           {Links.map((link) => (
             <li className="md:ml-8 md:my-0 mt-5 font-semibold text-xl border-b-2 md:border-b-0 text-right px-7 md:px-4 pb-4 md:pb-0 cursor-pointer" key={link.name}>
-              <Link
+             <Link
                 to={link.link}
                 activeClass="active"
                 smooth={true}
