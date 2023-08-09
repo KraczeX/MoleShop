@@ -1,20 +1,24 @@
-
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import profileImg from '../assets/logo.png'
 
 const Header = () => {
-  let Links = [
+  const Links = [
     { name: "Home", link: "home" },
     { name: "About us", link: "about" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
   ];
-  let [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
+  const closeMenu = () => {
+    setOpen(false);
+  };
 
   return (
     <div className="w-full relative z-[100]">
@@ -25,7 +29,7 @@ const Header = () => {
           <span className="text-primary hover:text-secondary md:ml-3 ml-2">CodingMole</span>
         </div>
         <div
-          onClick={() => setOpen(!open)}
+          onClick={toggleMenu}
           className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 text-primary"
         >
           {open ? <XMarkIcon /> : <Bars3Icon />}
@@ -36,16 +40,17 @@ const Header = () => {
         >
           {Links.map((link) => (
             <li className="md:ml-8 md:my-0 mt-5 font-semibold text-xl border-b-2 md:border-b-0 text-right px-7 md:px-4 pb-4 md:pb-0 cursor-pointer" key={link.name}>
-             <Link
+             <ScrollLink
                 to={link.link}
                 activeClass="active"
                 smooth={true}
                 spy={true}
                 offset={-100}
+                onClick={closeMenu}
                 className="text-light hover:text-secondary duration-500 uppercase"
               >
                 {link.name}
-              </Link>
+              </ScrollLink>
             </li>
           ))}
         </ul>

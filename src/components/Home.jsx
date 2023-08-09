@@ -52,17 +52,17 @@ const Home = () => {
 
       <div className="bg-white w-20 rounded py-1 px-2 absolute left-0 top-48 hidden md:block">
       <div className='my-1'>
-        <a href="" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
+        <a href="https://github.com/KraczeX" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
           <img src={GitHub} alt="" className='w-10 h-10'/>
         </a>
         </div>
         <div className='my-1'>
-        <a href="" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
+        <a href="https://www.youtube.com/channel/UCNxk1gQ9EnqzG25cfdtOIvA" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
           <img src={YouTube} alt="" className='w-10 h-10'/>
         </a>
         </div>
         <div className='my-1'>
-        <a href="" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
+        <a href="https://www.instagram.com/coding_mole/" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
           <img src={Instagram} alt="" className='w-10 h-10'/>
         </a>
         </div>
