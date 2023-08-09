@@ -4,8 +4,6 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
 .hero{
   background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/src/assets/common-bg.svg);
   background-position: center;
@@ -14,7 +12,6 @@
   max-height: 120rem;
   position: relative;
 }
-
 
 .btn{
   background: #0226bb;
@@ -62,8 +59,6 @@
     margin: 5rem auto 0 auto;
     background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/src/assets/common-bg.svg);
 }
-
-
 
 label{
   color: #666;
