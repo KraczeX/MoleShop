@@ -72,7 +72,7 @@ const Home = () => {
         </a>
         </div>
         <div className='my-1'>
-        <a href="" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
+        <a href="https://discord.gg/AXrJ7zbMxn" className='p-3 hover:bg-slate-400 block rounded transition-all duration-500'>
           <img src={Discord} alt="" className='w-10 h-10'/>
         </a>
         </div>
