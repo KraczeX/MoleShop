@@ -4,6 +4,8 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+
 .hero{
   background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/src/assets/common-bg.svg);
   background-position: center;
@@ -12,6 +14,42 @@
   max-height: 120rem;
   position: relative;
 }
+
+/* Animacja hamburgera */
+@keyframes rotateForward {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotateBack {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hamburger-icon span:nth-child(1) {
+  animation: rotateForward 0.3s ease forwards;
+}
+
+.hamburger-icon span:nth-child(3) {
+  animation: rotateBack 0.3s ease forwards;
+}
+
+.hamburger-icon.open span:nth-child(1) {
+  animation: rotateBack 0.3s ease forwards;
+}
+
+.hamburger-icon.open span:nth-child(3) {
+  animation: rotateForward 0.3s ease forwards;
+}
+
 
 .btn{
   background: #0226bb;
@@ -59,6 +97,8 @@
     margin: 5rem auto 0 auto;
     background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/src/assets/common-bg.svg);
 }
+
+
 
 label{
   color: #666;
